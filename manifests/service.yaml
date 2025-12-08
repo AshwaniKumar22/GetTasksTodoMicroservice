@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: get-task
 spec:
+  type: LoadBalancer
   selector:
     app: get-task
   ports:
