@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: get-task
+spec:
+  selector:
+    matchLabels:
+      app: get-task
+  template:
+    metadata:
+      labels:
+        app: get-task
+    spec:
+      containers:
+      - name: get-task
+        image: todoappacr2213.azurecr.io/get-task:v1
+        ports:
+        - containerPort: 8000
