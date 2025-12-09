@@ -17,3 +17,7 @@ spec:
         image: todoappacr2213.azurecr.io/get-task:v1
         ports:
         - containerPort: 8000
+        env:
+        - name: CONNECTION_STRING
+          value: Driver={ODBC Driver 18 for SQL Server};Server=tcp:todoapp-sql-server1322.database.windows.net,1433;Database=todoapp_db1322;Uid=devopsadmin;Pwd=P@ssword@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+
