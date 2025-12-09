@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: get-task
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: get-task
   ports:
