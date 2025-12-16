@@ -12,9 +12,9 @@ jobs:
 
     env:
       IMAGE_NAME: get-task
-      IMAGE_TAG: v2
-      ACR_NAME: todoappacr2213
-      ACR_LOGIN_SERVER: todoappacr2213.azurecr.io
+      IMAGE_TAG: v1
+      ACR_NAME: todoappacr777
+      ACR_LOGIN_SERVER: todoappacr777.azurecr.io
    
     steps:
     - name: Checkout
