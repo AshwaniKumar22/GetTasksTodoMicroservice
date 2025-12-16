@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: get-task
+  name: get-task-svc
 spec:
   type: ClusterIP
   selector:

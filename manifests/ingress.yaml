@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: todo-ui-ingress
+  labels:
+    app.kubernetes.io/name: todo-ui-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: gettask.devopsai.online
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: get-task-svc
+            port: 
+              number: 80
