@@ -19,4 +19,4 @@ spec:
         - containerPort: 8000
         env:
         - name: CONNECTION_STRING
-          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:todoapp-sql-server777.database.windows.net,1433;Database=todoapp_db1322;Uid=devopsadmin;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:todoapp-sql-server777.database.windows.net,1433;Database=todoapp_db1322;Uid=devopsadmin;Pwd=P@ssword@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
